@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-  <title>Stitch Design</title>
+  <title>CV David Cuevas</title>
   <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
   <link as="style"
     href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
@@ -88,13 +88,13 @@
         <section id="experience">
           <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Experience</h3>
           <div class="space-y-8">
-            <div class="flex gap-6">
+            <div class="flex gap-6" >
               <div class="flex-shrink-0">
                 <div class="w-16 h-16 rounded-lg bg-cover bg-center"
                   style='background-image: url("./src/images/logo Blue Light Consulting.png");'>
                 </div>
               </div>
-              <div>
+              <div class="card">
                 <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer</h4>
                 <p class="text-sm text-gray-500 dark:text-gray-400">October 2023 - September 2025</p>
                 <p class="mt-2 text-gray-700 dark:text-gray-300">
@@ -104,7 +104,7 @@
                 </p>
               </div>
             </div>
-            <div class="flex gap-6">
+            <div class="flex gap-6 card">
               <div class="flex-shrink-0">
                 <div class="w-16 h-16 rounded-lg bg-cover bg-center"
                   style='background-image: url("./src/images/logo AERTEC.png");'>
@@ -114,11 +114,13 @@
                 <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer</h4>
                 <p class="text-sm text-gray-500 dark:text-gray-400">March 2022 - October 2023</p>
                 <p class="mt-2 text-gray-700 dark:text-gray-300">
-                  Assisted in the development of web applications using C# and ASP.NET. Contributed to the design and
-                  implementation of new features. Participated in code reviews and testing.
+                  Developed and maintained web applications using JavaScript, React, and Node.js. Collaborated with
+                  cross-functional teams to deliver high-quality software solutions. Implemented new features and
+                  improved existing functionality.
                 </p>
               </div>
-              <div class="flex gap-6">
+            </div>
+            <div class="flex gap-6 card">
               <div class="flex-shrink-0">
                 <div class="w-16 h-16 rounded-lg bg-cover bg-center"
                   style='background-image: url("./src/images/logo plannifai.png");'>
@@ -128,10 +130,13 @@
                 <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Full Stack Developer</h4>
                 <p class="text-sm text-gray-500 dark:text-gray-400">October 2020 - November 2021</p>
                 <p class="mt-2 text-gray-700 dark:text-gray-300">
-                  WIP
+                  Developed and maintained web applications using JavaScript, React, and Node.js. Collaborated with
+                  cross-functional teams to deliver high-quality software solutions. Implemented new features and
+                  improved existing functionality.
                 </p>
               </div>
             </div>
+            
           </div>
         </section>
         <section id="skills">
@@ -265,3 +270,23 @@
 </body>
 
 </html>
+
+<style>
+  .card {
+  /* width: 80%; */
+  /* max-width: 600px; */
+  /* background: white; */
+  /* border-radius: 12px; */
+  /* box-shadow: 0 2px 5px rgba(0,0,0,0.1); */
+  padding: 0rem 1rem 1rem 1rem;
+  /* text-align: center; */
+  cursor: pointer;
+  transition: all 0.25s ease;
+}
+
+/* efecto de hover */
+.card:hover {
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+  transform: translateY(-3px); /* levanta la tarjeta un poco */
+}
+</style>
