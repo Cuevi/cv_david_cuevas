@@ -1,210 +1,267 @@
 <!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Stitch Design</title>
-<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
-<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
-<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            colors: {
-              primary: "#1773cf",
-              "background-light": "#f6f7f8",
-              "background-dark": "#111921",
-            },
-            fontFamily: {
-              display: ["Inter"],
-            },
-            borderRadius: {
-              DEFAULT: "0.25rem",
-              lg: "0.5rem",
-              xl: "0.75rem",
-              full: "9999px"
-            },
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>Stitch Design</title>
+  <link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect" />
+  <link as="style"
+    href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900"
+    onload="this.rel='stylesheet'" rel="stylesheet" />
+  <link href="data:image/x-icon;base64," rel="icon" type="image/x-icon" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1773cf",
+            "background-light": "#f6f7f8",
+            "background-dark": "#111921",
+          },
+          fontFamily: {
+            display: ["Inter"],
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
           },
         },
-      };
-    </script>
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+      },
+    };
+  </script>
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
 </head>
+
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
-<div class="flex flex-col min-h-screen">
-<header class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8">
-<div class="flex h-16 items-center justify-between">
-<div class="flex items-center gap-4">
-<svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
-<path d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z" fill="currentColor"></path>
-</svg>
-<h1 class="text-xl font-bold text-gray-900 dark:text-white">David Cuevas Carrasco</h1>
-</div>
-<div class="flex items-center gap-4">
-<nav class="hidden md:flex items-center gap-6 text-sm font-medium">
-<a class="hover:text-primary transition-colors" href="#about">About</a>
-<a class="hover:text-primary transition-colors" href="#experience">Experience</a>
-<a class="hover:text-primary transition-colors" href="#skills">Skills</a>
-<a class="hover:text-primary transition-colors" href="#projects">Projects</a>
-<a class="hover:text-primary transition-colors" href="#contact">Contact</a>
-</nav>
-<button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
-<span class="material-symbols-outlined text-gray-600 dark:text-gray-300"> language </span>
-</button>
-<div class="size-10 rounded-full bg-cover bg-center" style='background-image: url("./src/images/Foto David CV.jpg");'></div>
-</div>
-</div>
-</div>
-</header>
-<main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
-<div class="max-w-4xl mx-auto space-y-16">
-<section class="text-center" id="hero">
-<div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-32 h-32 mx-auto mb-4" style='background-image: url("./src/images/Foto David CV.jpg");'></div>
-<h2 class="text-4xl font-bold text-gray-900 dark:text-white">David Cuevas Carrasco</h2>
-<p class="text-lg text-gray-600 dark:text-gray-400 mt-1">Software Engineer</p>
-<p class="text-gray-500 dark:text-gray-400">Seville, Spain</p>
-</section>
-<section id="about">
-<h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">About Me</h3>
-<p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-              Highly motivated and skilled Software Engineer with 5+ years of experience in developing and maintaining web applications. Proven ability to work effectively in both individual and team settings, delivering high-quality solutions that meet client needs and exceed expectations. Passionate about staying up-to-date with the latest technologies and continuously improving my skills.
-            </p>
-</section>
-<section id="experience">
-<h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Experience</h3>
-<div class="space-y-8">
-<div class="flex gap-6">
-<div class="flex-shrink-0">
-<div class="w-16 h-16 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDJy228qyRqs4ltZ-NfkHrVTHq2enlv8ALHyihH2B8ghn4i4Sy6jtGKwRT5MvD_OXZrqc0hq-A5XdbeJ0tfUyz9qdo5EamShEw0iJMyeHTziZxCA69f2exx2v8VoFDTwIhII7CvEFRdf6ogYflWHuu-VR_QUDo4vjawbX7mEp6CWD3YCaS3QZR8rGUZdIMGfgqpGr05tcw-lIM7cM71rYaAdekbBj8EUPAPCLDAmzDxJlGCvM71sI4DlneFOBsFDsl0yHTCjWvnKyY");'></div>
-</div>
-<div>
-<h4 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer</h4>
-<p class="text-sm text-gray-500 dark:text-gray-400">2018 - Present</p>
-<p class="mt-2 text-gray-700 dark:text-gray-300">
-                    Developed and maintained web applications using JavaScript, React, and Node.js. Collaborated with cross-functional teams to deliver high-quality software solutions. Implemented new features and improved existing functionality.
-                  </p>
-</div>
-</div>
-<div class="flex gap-6">
-<div class="flex-shrink-0">
-<div class="w-16 h-16 rounded-lg bg-cover bg-center" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBBF-Gd3dJDsu4jy4uNH-QoMA4Gus8jJnJQB8xmcqqTF1tFqM0DEtbVawbKFpksEf86qKZK28RBDH8F1udW_AxGoXZvq8z0IX5gviizPpS8LOj2NxOpU32zc-L5sTKy4MtbhZIOwbv9faBFk-BKx-heKMZHRKTts3ZHBZrKx4Nts1hI_XJM51aVw_udTfqTA-kKmeef1fRblQoyqceQDMgLy2MVs1PLPx1OL6DjzuzaPjsd6vyx1q_gCPdpNPydnjZy7KLc1hRVAvs");'></div>
-</div>
-<div>
-<h4 class="text-lg font-semibold text-gray-900 dark:text-white">Junior Developer</h4>
-<p class="text-sm text-gray-500 dark:text-gray-400">2016 - 2018</p>
-<p class="mt-2 text-gray-700 dark:text-gray-300">
-                    Assisted in the development of web applications using C# and ASP.NET. Contributed to the design and implementation of new features. Participated in code reviews and testing.
-                  </p>
-</div>
-</div>
-</div>
-</section>
-<section id="skills">
-<h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Key Skills</h3>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
-<div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
-<img alt="JavaScript" class="w-12 h-12" src="./src/images/logo JavaScript.png"/>
-<h4 class="font-semibold text-gray-900 dark:text-white">JavaScript</h4>
-</div>
-<div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
-<img alt="C#" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm1HB1fldmnr8LdtM7GNl9DCqAW7cnjNLazdV2fc-ASvuJgZqaYzsbpol7wlVOnesjhEV4J5vs7bQMmygY4pAltZE5AVcy3CzjuwmdEKj5eqoFBRZ8q_yADi1lCwMCpet7I6ZlgHcUEpNFJWNkryXjta6ulvdiYe8gUCfLEFgs6lVCB-dT9QcC9iF8unCGp7_DMIiYOAp5E3jxmxiK6oJfTVNY7RZzY4fp-HV-4HLAJNW0mVHNgdYC5uNyh1WUrlVaGayN_5Jz7IQ"/>
-<h4 class="font-semibold text-gray-900 dark:text-white">C#</h4>
-</div>
-<div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
-<img alt="ASP.NET" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxgpM15TOwnFPVQ_aMdQGfajQ5XqFzwDcRfH3mn4qUij3OKYv8UrGmxvHjXQPGjMy24HS-QL8NDFMzY88onHY90B0sRinCL0C1o7geD-bCbfigKfe_jfONcQMtOC-kRpCLn6n6HVyfH2ESE4w7kz1GvUFfDBnlJT_70WC2TWrZjkqWSTaDnLkeCsDpzgTRWcf3zr8L9v6pi6oH1hM7JdVB8ivAPUO0bD_8H9LJ-jR_nu2GqLpvpZ5lWTZs98kDbJRbYYCdp2rm2O0"/>
-<h4 class="font-semibold text-gray-900 dark:text-white">ASP.NET</h4>
-</div>
-<div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
-<img alt="SQL" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyGj6rgTZIQmSI1AainjlA9Tp2kfsHv6RNVGAnC067wbb5zKNqkYAT4zB0fnCSL9fvx-h8LPomUvCdWusIGqzf_8A_V7zZCJg851oHbmbPF-8Tlaice2Chk4GTtocsqY0wyB10LpFIOPZzI2xpDCA2pBDrVs9Eg2lWPYDhh0702SnIym3jhKJt8cvFaUxMOvr-XvAqSO58Irq89YjWiyQGw5PJgeNcSMsLnODeDAJD6DztAOQFZ8PZeVb5OlJkj8dSgiQxOPo5Y0A"/>
-<h4 class="font-semibold text-gray-900 dark:text-white">SQL</h4>
-</div>
-<div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
-<img alt="Git" class="w-12 h-12" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-d35nolkmi1bEzoE8D52IuyxavJLI4IDZD2CpvLneUkg_gmjDw9hSyyM3D7HYsFbQ3PPIAW2YdPL_IjWoEyT2-sIs0uQyjSmlZ1HmRf5RlAU6gV6zuD2Avr6pRdrTrlkmXUzUwPuy28ZmqpKw-c76UX8YpkFGfC-tMyzDoR8gRD4qV0p4rc9HM1FkBoop6AvCU_4CiRmSRU6i1He5X57iX5AOFTumqVitTpqFRHuxm1_uPeN0NOtj4e5BfcjctXa3kcwxns9mtsI"/>
-<h4 class="font-semibold text-gray-900 dark:text-white">Git</h4>
-</div>
-</div>
-<h4 class="text-xl font-bold my-8 text-gray-900 dark:text-white">Other Skills</h4>
-<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-<div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
-<img alt="React" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW17Nl5TZKJ0f7pj40WU8uCb6WDLJhsvVt2lKCHoQNUskEGwDfXFNxQjtcvYcCJEAZayx36PVhCBuENFQ57ibiKzKiqLSOIz_VuVP2BeETSHLvJmBC-w10q7FRL1nQQI6tJABVvsVTXdX3A84LR9tWFl288RHAHjshQbmn55DSBJ89XfpooaT0wd4ImFtcdyecK14VmbhGyq0bLW6PJlLuIfbEk59SuLO1Rzl0u0V6PoNfwYr9NpcaM0WqJ30l2Oi44cNORoGnN5c"/>
-<h5 class="font-medium text-gray-800 dark:text-gray-200">React</h5>
-</div>
-<div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
-<img alt="Node.js" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt32JTh2GKrlyVlB50tRUpAt1bD-67t5rbLOhbg4FZAnZwTjBzumPB3qPB6azFL0OEETfxYh0nIf31GWehkWAVx3xYo6A42P6Xi7wmkRUjmE-sukwTqdd80KM9n8Kq4tPzctOyDCcB1mHniINpUzKGe8wY1A4eMP--tIHQKby1pT1_NfR3wfTz3JwnJaQ3D5sOIKB4fXiyqyV4Xo14-WEFZlehhVgjH9zXboo_ShwJP9rD8-IE714oKwmOL_xuhKxacYjB_njY0mc"/>
-<h5 class="font-medium text-gray-800 dark:text-gray-200">Node.js</h5>
-</div>
-<div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
-<img alt="HTML5" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsYHGvn5RMU35-bjCeBP99upq-fLazhgXgOfDHAeubyS7_E4PT74ZeONY3OJN4ekimKlATcPRudVDDGaEd7FCtmcFtF-g0M6MfdUPJSftf2tk7sqRbRhZEY4XMyOwGosdTcNcgA7RyT9Fu9tGaamoDm_wV24NX7x5YLGhHOP-nJxDdbhwbKE_atMGSbuc4RpwfW93dfenL_zxy8Z1HGlYzvkGCta7UwGH5fVw_JGR93MxR7ZKLNe02TYzcomenhvSSt-UZZbFqLQc"/>
-<h5 class="font-medium text-gray-800 dark:text-gray-200">HTML5</h5>
-</div>
-<div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
-<img alt="CSS3" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBno-K9BlKZMJhcs1cMma0hkVxL2fuKn8fWFC2LAuuKiRSocm0tltkG4HW3C7175WEEc6UNaQ6cJ3zOjkuGHRcAaxqiqGALSBfXTNzJCyjbGbKZQP013cs8YckCoEN09EpJhsc68UDgeCL9lLt8YwJj4U7PLdcGV-xx6PU62KHElIX9ar3pliQZziDnIXKKMy5XaFSTChe_JZSzqpfXQ_WzZtxmn4Qiury-NFsceIwLuEe-p57lG12yqXISwP_O3G61qq7-mI0Z2t4"/>
-<h5 class="font-medium text-gray-800 dark:text-gray-200">CSS3</h5>
-</div>
-<div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
-<img alt="Python" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRdCH9qSw3_GCsFJWeX38yzANXJnVtmrm_allG0gfMXvkcnxibHyi-JpzR2sjvaaXgLXQIzPm4gMdpV3-lzV4hNIKirGO4dnfqrgA15iukRXXO1H2x7XdRtZpp7IeXev0yTTeyIFXzGJws_u2ZRHyjPZoMK3Dfatjunuwvj83fZqsipsHoXuFwAu3WoEp-J9-nw6yXOUa9-RZTJ7ty6kT2SnQtBG_BekBoQMOsdvNoFuBO1L4k4-IgrfQU_1Kb9hsnlOmtcIHhOgw"/>
-<h5 class="font-medium text-gray-800 dark:text-gray-200">Python</h5>
-</div>
-<div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
-<img alt="Java" class="w-6 h-6" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrIz23dyTBqzfMmBHcJCySXBty2PRDMyVYBQTl2j2SiaLlluCs7LCYVkOQ2V__4ZC8h0FqqMqA2k-AVLL9x5zGqeVD4yB3Fw7DhDITONi2MTQjhYHQujLIM6YxRtymQU7t10IXvSqJI0R2qkNtt31QQDdNx78dNjF4_Af7Fre6PefCSpffLnyWrEqGGUCeZShIRQQDOhquLpGm1TExusjjUUvDQjLkKoOZyDTzPaMdgP_JZsSr7XU7AdptRIsbyKSBLzn0FfNkhaA"/>
-<h5 class="font-medium text-gray-800 dark:text-gray-200">Java</h5>
-</div>
-</div>
-</section>
-<section id="projects">
-<h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Projects</h3>
-<div class="space-y-12">
-<div class="grid md:grid-cols-2 gap-8 items-center">
-<div>
-<p class="text-sm font-semibold text-primary">Featured Project</p>
-<h4 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">E-commerce Platform</h4>
-<p class="mt-2 text-gray-700 dark:text-gray-300">
-                    Developed a full-featured e-commerce platform using React, Node.js, and MongoDB. Implemented user authentication, product management, shopping cart, and payment processing.
-                  </p>
-</div>
-<div class="w-full h-64 bg-cover bg-center rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuxTduH8-40J3QJp1z3vzdOBBRLqjwoZGJz4qdD13TolkkA4vRrxHD2rGOKqWE6MBROpDy4enSYIfsEd_TYPZZTHg0KfoEekW9yyKdLJTIOjCdRFdZ6WNOPJMWm906cEDFAFJIiTjeBv2aODk2rJR92Q6QF1KapZ4g5wAck3HeXqCAUbBy2sA-FluLSDEKsmlPPTI0_ZTzfayQASzPd8cYHnoYRpd5ufXhYH8bdGJdLZgG8tGaBov1a4qnS1XsR44gxLEqwJZMYA4");'></div>
-</div>
-<div class="grid md:grid-cols-2 gap-8 items-center">
-<div class="md:order-2">
-<p class="text-sm font-semibold text-primary">Personal Project</p>
-<h4 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Portfolio Website</h4>
-<p class="mt-2 text-gray-700 dark:text-gray-300">
-                    Designed and developed a personal portfolio website to showcase my skills and projects. Used HTML, CSS, and JavaScript.
-                  </p>
-</div>
-<div class="w-full h-64 bg-cover bg-center rounded-lg md:order-1" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfeeoWxgKUfKikL9rNja3tQnz-b3VwDSrJCGsCOFtyZSbZQrkYVXk7hAaS-acbTk6OU1PeGRujYkgFXYRp-Lnw-deuhVt_gsFwa52jdtkrbXDcwiIWuGjlQTtbBqs_U9D-ksnfo52Le3qSk7Q0yAwtpCMZSyiCyA55BfWFjQEYVvbZofAlT6a5bR-5tUrAC5m80-W7KE77o-NVGOvlXRbhrsyb0BYjC0CDltsuxeiLQKz08IiNS4xAauAvn8Cc1sFWeDTibStR0g4");'></div>
-</div>
-</div>
-</section>
-<section id="contact">
-<h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Contact</h3>
-<form class="space-y-6">
-<div>
-<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
-<input class="form-input w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary" id="email" placeholder="your.email@example.com" type="email"/>
-</div>
-<div>
-<label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="message">Message</label>
-<textarea class="form-textarea w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary" id="message" placeholder="Enter your message" rows="4"></textarea>
-</div>
-<div class="text-right">
-<button class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
-                  Send
-                </button>
-</div>
-</form>
-</section>
-</div>
-</main>
-<footer class="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
-<div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
-<p>© 2024 David Cuevas Carrasco. All rights reserved.</p>
-</div>
-</footer>
-</div>
+  <div class="flex flex-col min-h-screen">
+    <header
+      class="sticky top-0 z-10 w-full bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-b border-gray-200 dark:border-gray-700">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center gap-4">
+            <svg class="h-6 w-6 text-primary" fill="none" viewBox="0 0 48 48" xmlns="http://www.w3.org/2000/svg">
+              <path
+                d="M24 45.8096C19.6865 45.8096 15.4698 44.5305 11.8832 42.134C8.29667 39.7376 5.50128 36.3314 3.85056 32.3462C2.19985 28.361 1.76794 23.9758 2.60947 19.7452C3.451 15.5145 5.52816 11.6284 8.57829 8.5783C11.6284 5.52817 15.5145 3.45101 19.7452 2.60948C23.9758 1.76795 28.361 2.19986 32.3462 3.85057C36.3314 5.50129 39.7376 8.29668 42.134 11.8833C44.5305 15.4698 45.8096 19.6865 45.8096 24L24 24L24 45.8096Z"
+                fill="currentColor"></path>
+            </svg>
+            <h1 class="text-xl font-bold text-gray-900 dark:text-white">David Cuevas Carrasco</h1>
+          </div>
+          <div class="flex items-center gap-4">
+            <nav class="hidden md:flex items-center gap-6 text-sm font-medium">
+              <a class="hover:text-primary transition-colors" href="#about">About</a>
+              <a class="hover:text-primary transition-colors" href="#experience">Experience</a>
+              <a class="hover:text-primary transition-colors" href="#skills">Skills</a>
+              <a class="hover:text-primary transition-colors" href="#projects">Projects</a>
+              <a class="hover:text-primary transition-colors" href="#contact">Contact</a>
+            </nav>
+            <button class="p-2 rounded-full hover:bg-gray-200 dark:hover:bg-gray-700 transition-colors">
+              <span class="material-symbols-outlined text-gray-600 dark:text-gray-300"> language </span>
+            </button>
+            <div class="size-10 rounded-full bg-cover bg-center"
+              style='background-image: url("./src/images/Foto David CV.jpg");'></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="flex-grow container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="max-w-4xl mx-auto space-y-16">
+        <section class="text-center" id="hero">
+          <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-32 h-32 mx-auto mb-4"
+            style='background-image: url("./src/images/Foto David CV.jpg");'></div>
+          <h2 class="text-4xl font-bold text-gray-900 dark:text-white">David Cuevas Carrasco</h2>
+          <p class="text-lg text-gray-600 dark:text-gray-400 mt-1">Software Engineer</p>
+          <p class="text-gray-500 dark:text-gray-400">Seville, Spain</p>
+        </section>
+        <section id="about">
+          <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">About Me</h3>
+          <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
+            Highly motivated and skiller Software Developer with 3+ years of experience in developing and maintaining desktop and web applications. 
+            Proven ability to work effectively in both individual and team settings, delivering high-quality solutions that meet client needs and exceed expectations. 
+            Passionate about staying up-to-date with the latest technologies and continuously improving my skills.
+           </p>
+        </section>
+        <section id="experience">
+          <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Experience</h3>
+          <div class="space-y-8">
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-16 h-16 rounded-lg bg-cover bg-center"
+                  style='background-image: url("./src/images/logo Blue Light Consulting.png");'>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer</h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">October 2023 - September 2025</p>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                  Developed and maintained web applications using JavaScript, React, and Node.js. Collaborated with
+                  cross-functional teams to deliver high-quality software solutions. Implemented new features and
+                  improved existing functionality.
+                </p>
+              </div>
+            </div>
+            <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-16 h-16 rounded-lg bg-cover bg-center"
+                  style='background-image: url("./src/images/logo AERTEC.png");'>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer</h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">March 2022 - October 2023</p>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                  Assisted in the development of web applications using C# and ASP.NET. Contributed to the design and
+                  implementation of new features. Participated in code reviews and testing.
+                </p>
+              </div>
+              <div class="flex gap-6">
+              <div class="flex-shrink-0">
+                <div class="w-16 h-16 rounded-lg bg-cover bg-center"
+                  style='background-image: url("./src/images/logo plannifai.png");'>
+                </div>
+              </div>
+              <div>
+                <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Full Stack Developer</h4>
+                <p class="text-sm text-gray-500 dark:text-gray-400">October 2020 - November 2021</p>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                  WIP
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="skills">
+          <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Key Skills</h3>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-4">
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
+              <img alt="JavaScript" class="w-12 h-12" src="./src/images/logo JavaScript.png" />
+              <h4 class="font-semibold text-gray-900 dark:text-white">JavaScript</h4>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
+              <img alt="C#" class="w-12 h-12"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDm1HB1fldmnr8LdtM7GNl9DCqAW7cnjNLazdV2fc-ASvuJgZqaYzsbpol7wlVOnesjhEV4J5vs7bQMmygY4pAltZE5AVcy3CzjuwmdEKj5eqoFBRZ8q_yADi1lCwMCpet7I6ZlgHcUEpNFJWNkryXjta6ulvdiYe8gUCfLEFgs6lVCB-dT9QcC9iF8unCGp7_DMIiYOAp5E3jxmxiK6oJfTVNY7RZzY4fp-HV-4HLAJNW0mVHNgdYC5uNyh1WUrlVaGayN_5Jz7IQ" />
+              <h4 class="font-semibold text-gray-900 dark:text-white">C#</h4>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
+              <img alt="ASP.NET" class="w-12 h-12"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxgpM15TOwnFPVQ_aMdQGfajQ5XqFzwDcRfH3mn4qUij3OKYv8UrGmxvHjXQPGjMy24HS-QL8NDFMzY88onHY90B0sRinCL0C1o7geD-bCbfigKfe_jfONcQMtOC-kRpCLn6n6HVyfH2ESE4w7kz1GvUFfDBnlJT_70WC2TWrZjkqWSTaDnLkeCsDpzgTRWcf3zr8L9v6pi6oH1hM7JdVB8ivAPUO0bD_8H9LJ-jR_nu2GqLpvpZ5lWTZs98kDbJRbYYCdp2rm2O0" />
+              <h4 class="font-semibold text-gray-900 dark:text-white">ASP.NET</h4>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
+              <img alt="SQL" class="w-12 h-12"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyGj6rgTZIQmSI1AainjlA9Tp2kfsHv6RNVGAnC067wbb5zKNqkYAT4zB0fnCSL9fvx-h8LPomUvCdWusIGqzf_8A_V7zZCJg851oHbmbPF-8Tlaice2Chk4GTtocsqY0wyB10LpFIOPZzI2xpDCA2pBDrVs9Eg2lWPYDhh0702SnIym3jhKJt8cvFaUxMOvr-XvAqSO58Irq89YjWiyQGw5PJgeNcSMsLnODeDAJD6DztAOQFZ8PZeVb5OlJkj8dSgiQxOPo5Y0A" />
+              <h4 class="font-semibold text-gray-900 dark:text-white">SQL</h4>
+            </div>
+            <div class="flex flex-col items-center gap-2 p-4 rounded-lg bg-primary/10 dark:bg-primary/20">
+              <img alt="Git" class="w-12 h-12"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-d35nolkmi1bEzoE8D52IuyxavJLI4IDZD2CpvLneUkg_gmjDw9hSyyM3D7HYsFbQ3PPIAW2YdPL_IjWoEyT2-sIs0uQyjSmlZ1HmRf5RlAU6gV6zuD2Avr6pRdrTrlkmXUzUwPuy28ZmqpKw-c76UX8YpkFGfC-tMyzDoR8gRD4qV0p4rc9HM1FkBoop6AvCU_4CiRmSRU6i1He5X57iX5AOFTumqVitTpqFRHuxm1_uPeN0NOtj4e5BfcjctXa3kcwxns9mtsI" />
+              <h4 class="font-semibold text-gray-900 dark:text-white">Git</h4>
+            </div>
+          </div>
+          <h4 class="text-xl font-bold my-8 text-gray-900 dark:text-white">Other Skills</h4>
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
+            <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
+              <img alt="React" class="w-6 h-6"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuAW17Nl5TZKJ0f7pj40WU8uCb6WDLJhsvVt2lKCHoQNUskEGwDfXFNxQjtcvYcCJEAZayx36PVhCBuENFQ57ibiKzKiqLSOIz_VuVP2BeETSHLvJmBC-w10q7FRL1nQQI6tJABVvsVTXdX3A84LR9tWFl288RHAHjshQbmn55DSBJ89XfpooaT0wd4ImFtcdyecK14VmbhGyq0bLW6PJlLuIfbEk59SuLO1Rzl0u0V6PoNfwYr9NpcaM0WqJ30l2Oi44cNORoGnN5c" />
+              <h5 class="font-medium text-gray-800 dark:text-gray-200">React</h5>
+            </div>
+            <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
+              <img alt="Node.js" class="w-6 h-6"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDt32JTh2GKrlyVlB50tRUpAt1bD-67t5rbLOhbg4FZAnZwTjBzumPB3qPB6azFL0OEETfxYh0nIf31GWehkWAVx3xYo6A42P6Xi7wmkRUjmE-sukwTqdd80KM9n8Kq4tPzctOyDCcB1mHniINpUzKGe8wY1A4eMP--tIHQKby1pT1_NfR3wfTz3JwnJaQ3D5sOIKB4fXiyqyV4Xo14-WEFZlehhVgjH9zXboo_ShwJP9rD8-IE714oKwmOL_xuhKxacYjB_njY0mc" />
+              <h5 class="font-medium text-gray-800 dark:text-gray-200">Node.js</h5>
+            </div>
+            <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
+              <img alt="HTML5" class="w-6 h-6"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsYHGvn5RMU35-bjCeBP99upq-fLazhgXgOfDHAeubyS7_E4PT74ZeONY3OJN4ekimKlATcPRudVDDGaEd7FCtmcFtF-g0M6MfdUPJSftf2tk7sqRbRhZEY4XMyOwGosdTcNcgA7RyT9Fu9tGaamoDm_wV24NX7x5YLGhHOP-nJxDdbhwbKE_atMGSbuc4RpwfW93dfenL_zxy8Z1HGlYzvkGCta7UwGH5fVw_JGR93MxR7ZKLNe02TYzcomenhvSSt-UZZbFqLQc" />
+              <h5 class="font-medium text-gray-800 dark:text-gray-200">HTML5</h5>
+            </div>
+            <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
+              <img alt="CSS3" class="w-6 h-6"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBno-K9BlKZMJhcs1cMma0hkVxL2fuKn8fWFC2LAuuKiRSocm0tltkG4HW3C7175WEEc6UNaQ6cJ3zOjkuGHRcAaxqiqGALSBfXTNzJCyjbGbKZQP013cs8YckCoEN09EpJhsc68UDgeCL9lLt8YwJj4U7PLdcGV-xx6PU62KHElIX9ar3pliQZziDnIXKKMy5XaFSTChe_JZSzqpfXQ_WzZtxmn4Qiury-NFsceIwLuEe-p57lG12yqXISwP_O3G61qq7-mI0Z2t4" />
+              <h5 class="font-medium text-gray-800 dark:text-gray-200">CSS3</h5>
+            </div>
+            <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
+              <img alt="Python" class="w-6 h-6"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuBRdCH9qSw3_GCsFJWeX38yzANXJnVtmrm_allG0gfMXvkcnxibHyi-JpzR2sjvaaXgLXQIzPm4gMdpV3-lzV4hNIKirGO4dnfqrgA15iukRXXO1H2x7XdRtZpp7IeXev0yTTeyIFXzGJws_u2ZRHyjPZoMK3Dfatjunuwvj83fZqsipsHoXuFwAu3WoEp-J9-nw6yXOUa9-RZTJ7ty6kT2SnQtBG_BekBoQMOsdvNoFuBO1L4k4-IgrfQU_1Kb9hsnlOmtcIHhOgw" />
+              <h5 class="font-medium text-gray-800 dark:text-gray-200">Python</h5>
+            </div>
+            <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
+              <img alt="Java" class="w-6 h-6"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrIz23dyTBqzfMmBHcJCySXBty2PRDMyVYBQTl2j2SiaLlluCs7LCYVkOQ2V__4ZC8h0FqqMqA2k-AVLL9x5zGqeVD4yB3Fw7DhDITONi2MTQjhYHQujLIM6YxRtymQU7t10IXvSqJI0R2qkNtt31QQDdNx78dNjF4_Af7Fre6PefCSpffLnyWrEqGGUCeZShIRQQDOhquLpGm1TExusjjUUvDQjLkKoOZyDTzPaMdgP_JZsSr7XU7AdptRIsbyKSBLzn0FfNkhaA" />
+              <h5 class="font-medium text-gray-800 dark:text-gray-200">Java</h5>
+            </div>
+          </div>
+        </section>
+        <section id="projects">
+          <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Projects</h3>
+          <div class="space-y-12">
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div>
+                <p class="text-sm font-semibold text-primary">Featured Project</p>
+                <h4 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">E-commerce Platform</h4>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                  Developed a full-featured e-commerce platform using React, Node.js, and MongoDB. Implemented user
+                  authentication, product management, shopping cart, and payment processing.
+                </p>
+              </div>
+              <div class="w-full h-64 bg-cover bg-center rounded-lg"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAuxTduH8-40J3QJp1z3vzdOBBRLqjwoZGJz4qdD13TolkkA4vRrxHD2rGOKqWE6MBROpDy4enSYIfsEd_TYPZZTHg0KfoEekW9yyKdLJTIOjCdRFdZ6WNOPJMWm906cEDFAFJIiTjeBv2aODk2rJR92Q6QF1KapZ4g5wAck3HeXqCAUbBy2sA-FluLSDEKsmlPPTI0_ZTzfayQASzPd8cYHnoYRpd5ufXhYH8bdGJdLZgG8tGaBov1a4qnS1XsR44gxLEqwJZMYA4");'>
+              </div>
+            </div>
+            <div class="grid md:grid-cols-2 gap-8 items-center">
+              <div class="md:order-2">
+                <p class="text-sm font-semibold text-primary">Personal Project</p>
+                <h4 class="text-xl font-bold mt-1 text-gray-900 dark:text-white">Portfolio Website</h4>
+                <p class="mt-2 text-gray-700 dark:text-gray-300">
+                  Designed and developed a personal portfolio website to showcase my skills and projects. Used HTML,
+                  CSS, and JavaScript.
+                </p>
+              </div>
+              <div class="w-full h-64 bg-cover bg-center rounded-lg md:order-1"
+                style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuAfeeoWxgKUfKikL9rNja3tQnz-b3VwDSrJCGsCOFtyZSbZQrkYVXk7hAaS-acbTk6OU1PeGRujYkgFXYRp-Lnw-deuhVt_gsFwa52jdtkrbXDcwiIWuGjlQTtbBqs_U9D-ksnfo52Le3qSk7Q0yAwtpCMZSyiCyA55BfWFjQEYVvbZofAlT6a5bR-5tUrAC5m80-W7KE77o-NVGOvlXRbhrsyb0BYjC0CDltsuxeiLQKz08IiNS4xAauAvn8Cc1sFWeDTibStR0g4");'>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact">
+          <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Contact</h3>
+          <form class="space-y-6">
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2" for="email">Email</label>
+              <input
+                class="form-input w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                id="email" placeholder="your.email@example.com" type="email" />
+            </div>
+            <div>
+              <label class="block text-sm font-medium text-gray-700 dark:text-gray-300 mb-2"
+                for="message">Message</label>
+              <textarea
+                class="form-textarea w-full rounded border-gray-300 dark:border-gray-600 bg-gray-50 dark:bg-gray-800 text-gray-900 dark:text-white focus:ring-primary focus:border-primary"
+                id="message" placeholder="Enter your message" rows="4"></textarea>
+            </div>
+            <div class="text-right">
+              <button
+                class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
+                type="submit">
+                Send
+              </button>
+            </div>
+          </form>
+        </section>
+      </div>
+    </main>
+    <footer class="bg-gray-100 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700">
+      <div class="container mx-auto px-4 sm:px-6 lg:px-8 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+        <p>© 2024 David Cuevas Carrasco. All rights reserved.</p>
+      </div>
+    </footer>
+  </div>
 
 
-</body></html>
+</body>
+
+</html>
