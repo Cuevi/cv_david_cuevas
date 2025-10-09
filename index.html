@@ -64,8 +64,14 @@
                 <span class="material-symbols-outlined text-gray-600 dark:text-gray-300"> language </span>
               </button>
             </a>
-            <div class="size-10 rounded-full bg-cover bg-center"
-              style='background-image: url("./src/images/Foto David CV.jpg");'></div>
+            <div class="flex items-center">
+              <button
+                class="flex items-center justify-center gap-2 rounded-lg bg-primary/10 dark:bg-primary/20 hover:bg-primary/20 dark:hover:bg-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-colors"
+                onclick="window.print()">
+                <span class="material-symbols-outlined text-base">print</span>
+                <span>Print</span>
+              </button>
+            </div>
           </div>
         </div>
       </div>
@@ -75,9 +81,36 @@
         <section class="text-center" id="hero">
           <div class="bg-center bg-no-repeat aspect-square bg-cover rounded-full w-32 h-32 mx-auto mb-4"
             style='background-image: url("./src/images/Foto David CV.jpg");'></div>
+            
           <h2 class="text-4xl font-bold text-gray-900 dark:text-white">David Cuevas Carrasco</h2>
-          <p class="text-lg text-gray-600 dark:text-gray-400 mt-1">Software Engineer</p>
-          <p class="text-gray-500 dark:text-gray-400">Seville, Spain</p>
+          <p class="text-lg text-gray-600 dark:text-gray-400 mt-1">Software Developer</p>
+          
+          <div
+            class="mt-4 flex flex-wrap justify-center gap-x-4 gap-y-2 text-sm text-gray-600 dark:text-gray-400">
+            <span class="flex items-center gap-1.5"><span class="material-symbols-outlined text-base">location_on</span>
+              San Francisco, CA</span>
+            <a class="flex items-center gap-1.5 hover:text-primary" href="mailto:davidcuevascarrasco10@gmail.com"><span
+                class="material-symbols-outlined text-base">mail</span> davidcuevascarrasco10@gmail.com</a>
+            <a class="flex items-center gap-1.5 hover:text-primary" href="https://www.linkedin.com/in/davidcuevas1/"
+              rel="noopener noreferrer" target="_blank">
+              <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24"> 
+                <path clip-rule="evenodd"
+                  d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"
+                  fill-rule="evenodd"></path>
+              </svg>
+              linkedin.com/in/davidcuevas1/
+            </a>
+            <a class="flex items-center gap-1.5 hover:text-primary" href="https://github.com/Cuevi"
+              rel="noopener noreferrer" target="_blank">
+              <svg aria-hidden="true" class="w-4 h-4" fill="currentColor" viewBox="0 0 24 24">
+                <path clip-rule="evenodd"
+                  d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.165 6.839 9.489.5.092.682-.217.682-.482 0-.237-.009-.868-.014-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.031-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.378.203 2.398.1 2.651.64.7 1.03 1.595 1.03 2.688 0 3.848-2.338 4.695-4.566 4.942.359.308.678.92.678 1.852 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.001 10.001 0 0022 12c0-5.523-4.477-10-10-10z"
+                  fill-rule="evenodd"></path>
+              </svg>
+              github.com/Cuevi
+            </a>
+
+            
         </section>
         <section id="about" style="scroll-margin-top: 100px;">
           <h3 class="text-2xl font-bold mb-4 text-gray-900 dark:text-white">About Me</h3>
@@ -90,7 +123,7 @@
           </p>
         </section>
         <section id="experience" style="scroll-margin-top: 100px;">
-          <a href="#skills2">
+          <a href="#detailed_experience">
             <h3 class="text-2xl font-bold mb-8 text-gray-900 dark:text-white">Experience</h3>
             <div class="space-y-8">
               <div class="flex gap-6 card">
@@ -241,10 +274,14 @@
                 <div class="space-y-2">
                   <h5 class="font-semibold">Prototype Developer – AIRBUS Project</h5>
                   <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Sole developer for a WPF prototype application commissioned by AIRBUS. Used .NET with C# and designed two 
-                    databases with SQLite and LiteDB. The project involved processing operator work-hour data to create a desktop application 
-                    that visualized performance in graphs, identified major discrepancies, and later included predictive analytics. The prototype 
-                    was highly successful, and the client chose not to renew the contract to develop the system internally with their own engineers.
+                    Sole developer for a WPF prototype application commissioned by AIRBUS. Used .NET with C# and
+                    designed two
+                    databases with SQLite and LiteDB. The project involved processing operator work-hour data to create
+                    a desktop application
+                    that visualized performance in graphs, identified major discrepancies, and later included predictive
+                    analytics. The prototype
+                    was highly successful, and the client chose not to renew the contract to develop the system
+                    internally with their own engineers.
                   </p>
                 </div>
               </div>
@@ -288,7 +325,7 @@
               </div>
             </div>
         </section>
-        <section id="skills2" style="scroll-margin-top: 100px;">
+        <section>
           <h4 class="text-xl font-bold my-8 text-gray-900 dark:text-white">Other Skills</h4>
           <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
             <div class="flex items-center gap-3 p-3 rounded bg-gray-100 dark:bg-gray-800">
