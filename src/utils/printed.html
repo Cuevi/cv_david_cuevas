@@ -38,7 +38,7 @@
 <body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
   <div class="min-h-screen">
     <header
-      class="bg-background-light dark:bg-background-dark/80 sticky top-0 z-10 w-full border-b border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm">
+      class="bg-background-light dark:bg-background-dark/80 sticky top-0 z-10 w-full border-b border-gray-200/50 dark:border-gray-700/50 backdrop-blur-sm no-print">
       <div class="container mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex h-16 items-center justify-between">
           <div class="flex items-center gap-4">
@@ -239,9 +239,8 @@
                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Personal CV</h3>
                 <span class="text-xs font-mono text-gray-500 dark:text-gray-400">2025</span>
               </div>
-              <a class="text-sm text-primary hover:underline block my-1"
-                href="https://github.com/Cuevi/cv_david_cuevas" rel="noopener noreferrer"
-                target="_blank">github.com/Cuevi/cv_david_cuevas</a>
+              <a class="text-sm text-primary hover:underline block my-1" href="https://github.com/Cuevi/cv_david_cuevas"
+                rel="noopener noreferrer" target="_blank">github.com/Cuevi/cv_david_cuevas</a>
               <p class="text-sm text-gray-700 dark:text-gray-300">A web application to show my personal CV.
                 Built with HTML, CSS, Tailwind, JavaScript.</p>
             </div>
@@ -251,10 +250,10 @@
                 <h3 class="text-lg font-semibold text-gray-800 dark:text-gray-100">Full-Stack project</h3>
                 <span class="text-xs font-mono text-gray-500 dark:text-gray-400">2025</span>
               </div>
-              <a class="text-sm text-primary hover:underline block my-1"
-                href="https://github.com/Cuevi/data-and-charts" rel="noopener noreferrer"
-                target="_blank">github.com/Cuevi/data-and-charts</a>
-              <p class="text-sm text-gray-700 dark:text-gray-300">A Full-Stack project built using ASP.Net Core Web API and SQLite</p>
+              <a class="text-sm text-primary hover:underline block my-1" href="https://github.com/Cuevi/data-and-charts"
+                rel="noopener noreferrer" target="_blank">github.com/Cuevi/data-and-charts</a>
+              <p class="text-sm text-gray-700 dark:text-gray-300">A Full-Stack project built using ASP.Net Core Web API
+                and SQLite</p>
             </div>
           </div>
         </section>
@@ -265,3 +264,21 @@
 </body>
 
 </html>
+
+<style>
+  @media print {
+
+    header,
+    .site-header,
+    .no-print {
+      display: none !important;
+    }
+  }
+
+  @media print {
+    * {
+      -webkit-print-color-adjust: exact;
+      print-color-adjust: exact;
+    }
+  }
+</style>

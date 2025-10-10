@@ -65,17 +65,18 @@
               </button>
             </a>
             <div class="flex items-center">
+              <button
+                class="flex items-center justify-center gap-2 rounded-lg bg-primary/10 dark:bg-primary/20 hover:bg-primary/20 dark:hover:bg-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-colors"
+                onclick="openPrintPage()">
+                <span class="material-symbols-outlined text-base">print</span>
+                <span>Print Summary</span>
+              </button>
               <!-- <button
                 class="flex items-center justify-center gap-2 rounded-lg bg-primary/10 dark:bg-primary/20 hover:bg-primary/20 dark:hover:bg-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-colors"
-                onclick="window.print()">
+                type="button" onclick="alert('The Spanish translation will be made soon.')">
                 <span class="material-symbols-outlined text-base">print</span>
                 <span>Print</span>
               </button> -->
-              <button
-                class="inline-flex justify-center py-2 px-6 border border-transparent shadow-sm text-sm font-medium rounded-lg text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary"
-                type="button" onclick="alert('The Spanish translation will be made soon.')">
-                Send
-              </button>
             </div>
           </div>
         </div>
@@ -140,8 +141,10 @@
                   <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer</h4>
                   <p class="text-sm text-gray-500 dark:text-gray-400">October 2023 - September 2025</p>
                   <p class="mt-2 text-gray-700 dark:text-gray-300">
-                    Built small-scale applications with ASP.NET Core, WPF, and databases like MongoDB, SQL, and LiteDB, automating workflows 
-                    based on Excel data. Also developed the company’s website using HTML, CSS, JavaScript, and Astro with a responsive, modern UI.
+                    Built small-scale applications with ASP.NET Core, WPF, and databases like MongoDB, SQL, and LiteDB,
+                    automating workflows
+                    based on Excel data. Also developed the company’s website using HTML, CSS, JavaScript, and Astro
+                    with a responsive, modern UI.
                   </p>
                 </div>
               </div>
@@ -155,8 +158,10 @@
                   <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Software Engineer</h4>
                   <p class="text-sm text-gray-500 dark:text-gray-400">March 2022 - October 2023</p>
                   <p class="mt-2 text-gray-700 dark:text-gray-300">
-                    Developed and maintained .NET applications (Web API, WPF) supporting aircraft maintenance operations. 
-                    Led the design of a WPF prototype for performance analytics using C#, SQLite, and LiteDB a project that exceeded 
+                    Developed and maintained .NET applications (Web API, WPF) supporting aircraft maintenance
+                    operations.
+                    Led the design of a WPF prototype for performance analytics using C#, SQLite, and LiteDB a project
+                    that exceeded
                     client expectations and was later internalized by AIRBUS.
                   </p>
                 </div>
@@ -171,8 +176,10 @@
                   <h4 class="text-lg font-semibold text-gray-900 dark:text-white">Full Stack Developer</h4>
                   <p class="text-sm text-gray-500 dark:text-gray-400">October 2020 - November 2021</p>
                   <p class="mt-2 text-gray-700 dark:text-gray-300">
-                    Contributed to the company’s main workforce management platform, developing and testing backend API endpoints with Node.js, 
-                    Python, and PostgreSQL, and maintaining data structures in MongoDB. Also led the frontend development of “Capitán PRO,” a Vue.js 
+                    Contributed to the company’s main workforce management platform, developing and testing backend API
+                    endpoints with Node.js,
+                    Python, and PostgreSQL, and maintaining data structures in MongoDB. Also led the frontend
+                    development of “Capitán PRO,” a Vue.js
                     web app that visualized financial statistics and predictions for professional football players.
                   </p>
                 </div>
@@ -251,19 +258,24 @@
               <div class="flex-shrink-0">
               </div>
               <div class="space-y-4">
-                <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Full-Stack Developer at Blue Light Consulting
+                <h4 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Full-Stack Developer at Blue Light
+                  Consulting
                   (Plannifai)</h4>
                 <div class="space-y-2">
                   <h5 class="font-semibold">Application and Web Developer</h5>
                   <p class="text-gray-700 dark:text-gray-300 leading-relaxed">
-                    Developed small-scale projects using ASP.NET Core and WPF, along with MongoDB, SQL, and LiteDB databases. 
-                    These projects primarily involved processing and transforming Excel data extracts to create more efficient 
-                    and automated workflows. My responsibilities included designing and implementing the databases, and when required, 
+                    Developed small-scale projects using ASP.NET Core and WPF, along with MongoDB, SQL, and LiteDB
+                    databases.
+                    These projects primarily involved processing and transforming Excel data extracts to create more
+                    efficient
+                    and automated workflows. My responsibilities included designing and implementing the databases, and
+                    when required,
                     developing WPF applications or integrating new features into a larger MVC-based system.
 
-                    Additionally, I developed the company’s website using HTML, CSS and JavaScript, ensuring a modern, responsive, 
+                    Additionally, I developed the company’s website using HTML, CSS and JavaScript, ensuring a modern,
+                    responsive,
                     and maintainable frontend structure aligned with current web development standards.
-                  </p>     
+                  </p>
                 </div>
               </div>
             </div>
@@ -467,3 +479,19 @@
     /* levanta la tarjeta un poco */
   }
 </style>
+
+<script>
+  function openPrintPage() {
+    const printWindow = window.open('./src/utils/printed.html', '_blank');
+    printWindow.onload = function () {
+      printWindow.focus();
+      printWindow.print();
+      printWindow.onafterprint = function () {
+        printWindow.close();
+      };
+    };
+  }
+  function openPrintPage1() {
+    window.open('./src/utils/printed.html', '_blank');
+  }
+</script>
