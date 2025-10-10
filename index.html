@@ -69,7 +69,7 @@
                 class="flex items-center justify-center gap-2 rounded-lg bg-primary/10 dark:bg-primary/20 hover:bg-primary/20 dark:hover:bg-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-colors"
                 onclick="openPrintPage()">
                 <span class="material-symbols-outlined text-base">print</span>
-                <span>Print Summary</span>
+                <span>Summary version</span>
               </button>
               <!-- <button
                 class="flex items-center justify-center gap-2 rounded-lg bg-primary/10 dark:bg-primary/20 hover:bg-primary/20 dark:hover:bg-primary/30 px-4 py-2 text-sm font-semibold text-primary transition-colors"
@@ -482,7 +482,7 @@
 
 <script>
   function openPrintPage() {
-    const printWindow = window.open('./src/utils/printed.html', '_blank');
+    const printWindow = window.open('./src/utils/cv_for_print_english.html', '_blank');
     printWindow.onload = function () {
       printWindow.focus();
       printWindow.print();
@@ -491,7 +491,5 @@
       };
     };
   }
-  function openPrintPage1() {
-    window.open('./src/utils/printed.html', '_blank');
-  }
+  
 </script>
